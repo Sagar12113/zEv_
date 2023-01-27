@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&display=swap');
+$glass : rgba($color: #000000, $alpha: .2);
+$green : #7FA800;
+$white : #fff;
+$animationSpeed: 40s;
+$color-white: #ffffff;
+$color-light: #f4f4f4;
+$color-darks: #454545;
+$icon : #565353;
+$dark-blue: #1F2937;
+$box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+$yellow : #FFD337;
+$box-shadow_2: 0 0 6px rgba(0, 0, 0, 0.16);
+$border-radius : 1rem;
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.btn_1 {
+    font-family: 'Electrolize', sans-serif;
+    border: 2px solid #000000;
+    padding: .6rem 2rem;
+    border-radius: $border-radius;
+    background: $white;
+    font-size: 1.3rem;
+
+    &:hover {
+        background: $dark-blue;
+        transform: scale(1.1);
+        transition-duration: .2s;
+
+        a {
+            color: $white;
+        }
+    }
+}
+
+.heading {
+    width: 100%;
+    margin: 2rem 0 0 0;
+    text-align: center;
+    color: $green;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 4rem;
+}
+
+section {
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 0 0;
+}

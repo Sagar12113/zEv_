@@ -1,0 +1,573 @@
+@media only screen and (max-width: 1290px) {
+    footer {
+
+        .contact_address_1 {
+
+            .address,
+            .contact,
+            .blank {
+                h3 {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .cprofile_sec {
+
+            .copy_right,
+            .designed_by,
+            .social {
+                h4 {
+                    font-size: 1rem;
+                }
+
+            }
+
+
+        }
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+    .organisations_we_serve {
+        .org_slider {
+
+            // width: 100%;
+            .glide {
+                width: 100%;
+
+                .glide__track {
+                    ul {
+                        li {
+                            padding: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+
+    .testimonials_con {
+        .customersrepeat {
+            .img_on_text {
+                width: 90%;
+                .text {
+                    h2 {
+                        font-size: 8em;
+                        line-height: 1;
+                    }
+
+                    span {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+
+        .testimonial_slid {
+            .cards {
+                margin-right: 28%;
+
+                .outer {
+                    .card {
+                        max-width: 22rem;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1050px) {
+    .heading {
+        font-size: 3.5rem;
+    }
+
+    footer {
+
+        .contact_address_1 {
+
+            .address,
+            .contact,
+            .blank {
+                h3 {
+                    font-size: .9rem;
+                }
+            }
+        }
+
+        .cprofile_sec {
+
+            .copy_right,
+            .designed_by,
+            .social {
+                h4 {
+                    font-size: .8rem;
+                }
+
+            }
+
+            .social {
+                .icon {
+                    i {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+
+@media only screen and (max-width: 900px) {
+    .heading {
+        font-size: 3rem;
+    }
+
+    .zev {
+
+        .numbers {
+            .our_exp {
+                h1 {
+                    font-size: 2.5rem;
+                }
+
+                p {
+                    font-size: 1.7rem;
+                }
+            }
+
+        }
+    }
+
+    .testimonials_con {
+        flex-direction: column;
+        .customersrepeat {
+            width: 100%;
+            justify-content: center;
+
+            .img_on_text {
+                width: 90%;
+            }
+        }
+
+        .testimonial_slid {
+            width: 100%;
+            .cards {
+                margin-right: 10%;
+
+                .outer {
+                    .card {
+                        max-width: 80%;
+
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 790px) {
+    footer {
+        .contact_address_1 {
+            display: none;
+        }
+
+        .contact_address_2 {
+            display: block;
+
+            .cont {
+                display: flex;
+                justify-content: center;
+
+                .add {
+                    width: fit-content;
+
+                    h3 {
+                        color: $green;
+                        font-size: 1.3rem;
+                        font-family: 'Electrolize', sans-serif;
+
+                        i {
+                            margin: 0 1rem;
+
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .cprofile_sec {
+            flex-direction: column;
+            justify-content: center;
+
+            .copy_right,
+            .designed_by,
+            .social {
+                width: calc(100%);
+                display: flex;
+                justify-content: center;
+                margin-top: 1rem;
+
+                h4 {
+                    width: fit-content;
+                    font-size: 1.2rem;
+
+                }
+            }
+
+            .copy_right {
+                order: 1;
+            }
+
+            .designed_by {
+                order: 2;
+            }
+
+            .social {
+                order: 3;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .zev {
+        .org_name {
+            .zev_name {
+                font-size: 2.5rem;
+
+                span {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .mid_text {
+            font-size: 5rem;
+        }
+
+        .numbers {
+            .our_exp {
+                h1 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: 1.5rem;
+                }
+            }
+
+        }
+    }
+    .Our_Services {
+        .services {
+            .service_image{
+                width: 15rem;
+                .circle {
+                    margin: 1rem;
+                }
+            }
+            .img_and_name{
+                h4{
+                    font-size: 1.2rem !important;
+                }
+            }
+            
+        }
+    }
+
+
+}
+
+@media only screen and (max-width: 604px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .zev {
+
+        .numbers {
+            .our_exp {
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .heading {
+        font-size: 2rem;
+    }
+
+    .zev {
+        .org_name {
+            .zev_name {
+                font-size: 1.8rem;
+
+                span {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
+        .mid_text {
+            font-size: 3rem;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, 0);
+        }
+
+        .numbers {
+            .our_exp {
+                width: 100%;
+
+                h1 {
+                    font-size: 1.4rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+        }
+    }
+
+    .Our_Services {
+        .services {
+            .service_image{
+                width: 12rem;
+            }
+            .img_and_name{
+                h4{
+                    font-size: 1rem !important;
+                }
+            }
+            
+        }
+    }
+
+    .testimonials_con {
+        .customersrepeat {
+            .img_on_text {
+
+                .text{
+                    h2{
+                        font-size: 5em;
+                        line-height: 1;
+                    }
+                    span{
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+
+    footer {
+        .contact_address_2 {
+            .cont {
+                .add {
+                    h3 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+
+        .cprofile_sec {
+
+            .copy_right,
+            .designed_by,
+            .social {
+                h4 {
+                    font-size: .9rem;
+
+                }
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 405px) {
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .zev {
+        background-image: url('../asset/home/phone-bg.png');
+
+        .org_name {
+            img {
+                width: 3rem;
+            }
+
+            .zev_name {
+                font-size: 1.5rem;
+
+                span {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        .mid_text {
+            font-size: 2.5rem;
+            left: 50%;
+            top: 30%;
+            transform: translate(-50%, 0);
+        }
+
+        .numbers {
+            .our_exp {
+                width: 100%;
+
+                h1 {
+                    font-size: 1.3rem;
+                }
+
+                p {
+                    font-size: .9rem;
+                }
+            }
+
+        }
+    }
+
+    .Our_Services {
+        .services {
+            .service_image{
+                width: 10rem;
+                .circle {
+                    margin: .5rem;
+                }
+            }
+            .img_and_name{
+                h4{
+                    font-size: .9rem !important;
+                }
+            }
+            
+        }
+    }
+
+    .testimonials_con {
+        .customersrepeat {
+            .img_on_text {
+
+                .text{
+                    h2{
+                        font-size: 4em;
+                    }
+                    span{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 467px) {
+
+    /*Edited*/
+    .card {
+        font-size: 10px;
+        padding: 0.5rem !important;
+        margin: 0.5rem;
+    }
+    @keyframes animate {
+        0% {
+          opacity: 0;
+          transform: translateY(100%) scale(0.8);
+        }
+        5%,
+        20% {
+          opacity: 0.4;
+          transform: translateY(100%) translateX(0) scale(0.9);
+        }
+        25%,
+        40% {
+          opacity: 1;
+          pointer-events: all;
+          transform: translateY(0%) translateX(2rem) scale(1) ;
+        }
+        45%,
+        60% {
+          opacity: 0.4;
+          transform: translateY(-100%) translateX(0) scale(0.9);
+        }
+        65%,
+        100% {
+          opacity: 0;
+          transform: translateY(-100%) scale(0.8);
+        }
+      }
+      
+}
+
+
+@media only screen and (max-width: 356px) {
+    .heading {
+        font-size: 1.5rem;
+    }
+.testimonials_con{
+ .testimonial_slid{
+    .cards{
+        height: 32rem;
+    }
+ }   
+}
+
+
+
+}
+
+
+
+@media only screen and (max-width: 375px) {
+    .zev {
+        .numbers {
+            .our_exp {
+                h1 {
+                    font-size: 1.2rem;
+                }
+    
+                p {
+                    font-size: .8rem;
+                }
+            }
+    
+        }
+    }
+    
+    
+    }
+
+
+@media only screen and (max-width: 343px) {
+.testimonials_con{
+ .testimonial_slid{
+    .cards{
+        height: 34rem;
+    }
+ }   
+}
+}

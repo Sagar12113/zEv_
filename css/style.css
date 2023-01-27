@@ -1,0 +1,581 @@
+@import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+.btn_1 {
+  font-family: 'Electrolize', sans-serif;
+  border: 2px solid #000000;
+  padding: .6rem 2rem;
+  border-radius: 1rem;
+  background: #fff;
+  font-size: 1.3rem; }
+  .btn_1:hover {
+    background: #1F2937;
+    transform: scale(1.1);
+    transition-duration: .2s; }
+    .btn_1:hover a {
+      color: #fff; }
+
+.heading {
+  width: 100%;
+  margin: 2rem 0 0 0;
+  text-align: center;
+  color: #7FA800;
+  font-family: 'Electrolize', sans-serif;
+  font-size: 4rem; }
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0 0 0; }
+
+.zev {
+  background-image: url("../asset/home/bg.png");
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  position: relative; }
+  .zev .org_name {
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center; }
+    .zev .org_name .zev_name {
+      color: #7FA800;
+      margin: 1rem;
+      font-family: 'Electrolize', sans-serif;
+      font-size: 3.5rem;
+      line-height: .7;
+      position: relative; }
+      .zev .org_name .zev_name span {
+        font-size: 2.2rem; }
+      .zev .org_name .zev_name::before {
+        content: "";
+        position: absolute;
+        width: 3px;
+        height: 100%;
+        background: #7FA800;
+        left: -.8rem; }
+  .zev .numbers {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 1.5rem 0;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(20px);
+    display: flex;
+    font-family: 'Electrolize', sans-serif; }
+    .zev .numbers .our_exp {
+      width: calc(100% / 3);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column; }
+      .zev .numbers .our_exp h1 {
+        font-size: 3rem; }
+      .zev .numbers .our_exp p {
+        font-size: 2rem;
+        margin: 0; }
+
+.Our_Services .services {
+  max-width: 1140px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .Our_Services .services .service_image .circle {
+    position: relative;
+    margin: 2rem; }
+    .Our_Services .services .service_image .circle .circle_img {
+      width: 100%; }
+    .Our_Services .services .service_image .circle:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      transition-duration: .5s; }
+  .Our_Services .services .service_image .img_and_name {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .Our_Services .services .service_image .img_and_name img {
+      width: 50%; }
+    .Our_Services .services .service_image .img_and_name h4 {
+      color: #7FA800;
+      font-size: 1.2rem;
+      font-family: 'Electrolize', sans-serif; }
+
+.organisations_we_serve .org_slider {
+  width: 100%; }
+  .organisations_we_serve .org_slider .glide {
+    width: 1144px; }
+    .organisations_we_serve .org_slider .glide .glide__track ul li {
+      padding: 5px; }
+      .organisations_we_serve .org_slider .glide .glide__track ul li .content_box {
+        box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
+        min-height: 400px; }
+        .organisations_we_serve .org_slider .glide .glide__track ul li .content_box img {
+          margin-top: 1rem;
+          width: 150px;
+          height: 150px; }
+        .organisations_we_serve .org_slider .glide .glide__track ul li .content_box .org_name {
+          font-family: 'Electrolize', sans-serif;
+          color: #7FA800;
+          margin-top: 1rem;
+          font-size: 1.5rem; }
+        .organisations_we_serve .org_slider .glide .glide__track ul li .content_box p {
+          margin: 1rem;
+          text-align: justify;
+          color: #565353; }
+.organisations_we_serve .glide__arrow {
+  position: absolute;
+  display: block;
+  top: 50%;
+  z-index: 2;
+  opacity: 1;
+  transform: translateY(-50%); }
+  .organisations_we_serve .glide__arrow .arrow_icon i {
+    color: #565353;
+    font-size: 4rem; }
+
+.deal_vehicles {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+  .deal_vehicles .vehicles_info {
+    width: 12rem;
+    height: 12rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 4px #888888;
+    border-radius: 1rem; }
+    .deal_vehicles .vehicles_info:hover {
+      transform: scale(1.1);
+      transition-duration: .5s; }
+    .deal_vehicles .vehicles_info .img_name {
+      display: grid;
+      place-items: center; }
+      .deal_vehicles .vehicles_info .img_name img {
+        width: 90%; }
+      .deal_vehicles .vehicles_info .img_name h4 {
+        color: #7FA800;
+        font-size: 1.3rem; }
+
+.testimonials_con {
+  display: flex;
+  width: 100%; }
+  .testimonials_con .customersrepeat {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; }
+    .testimonials_con .customersrepeat .img_on_text {
+      width: 85%;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .testimonials_con .customersrepeat .img_on_text img {
+        border-radius: 1rem;
+        max-width: 536px; }
+      .testimonials_con .customersrepeat .img_on_text .text {
+        position: absolute;
+        font-family: 'Electrolize', sans-serif;
+        text-align: center; }
+        .testimonials_con .customersrepeat .img_on_text .text h2 {
+          font-size: 10em;
+          line-height: 1;
+          color: #fff; }
+        .testimonials_con .customersrepeat .img_on_text .text span {
+          font-size: 3rem;
+          color: #fff; }
+  .testimonials_con .testimonial_slid {
+    width: 50%; }
+    .testimonials_con .testimonial_slid .cards {
+      display: grid;
+      place-items: center;
+      height: 26rem;
+      margin-right: 28%; }
+      .testimonials_con .testimonial_slid .cards .outer {
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .testimonials_con .testimonial_slid .cards .outer .card {
+          background: #fff;
+          padding: 1rem;
+          max-width: 30rem;
+          border-radius: 1rem;
+          position: absolute;
+          pointer-events: none;
+          opacity: 0;
+          animation: animate 15s infinite linear;
+          animation-delay: calc(3s * var(--delay));
+          box-shadow: 0 0 6px rgba(0, 0, 0, 0.16); }
+          .testimonials_con .testimonial_slid .cards .outer .card .testimonial p {
+            font-size: .9rem;
+            color: #565353;
+            opacity: .9;
+            margin-bottom: 0; }
+          .testimonials_con .testimonial_slid .cards .outer .card .testimonial .org_rating {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; }
+            .testimonials_con .testimonial_slid .cards .outer .card .testimonial .org_rating p {
+              font-family: 'Electrolize', sans-serif;
+              font-size: 1.2rem;
+              color: #565353;
+              opacity: .5;
+              font-weight: 800; }
+            .testimonials_con .testimonial_slid .cards .outer .card .testimonial .org_rating span {
+              font-size: 1.2rem;
+              color: #FFD337; }
+              .testimonials_con .testimonial_slid .cards .outer .card .testimonial .org_rating span i {
+                margin: 0 .5rem; }
+    .testimonials_con .testimonial_slid .outer:hover .card {
+      animation-play-state: paused; }
+    .testimonials_con .testimonial_slid .cards .card:last-child {
+      animation-delay: calc(-3s * var(--delay)); }
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0.8); }
+  5%,
+            20% {
+    opacity: 0.4;
+    transform: translateY(100%) translateX(0) scale(0.9); }
+  25%,
+            40% {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0%) translateX(4rem) scale(1); }
+  45%,
+            60% {
+    opacity: 0.4;
+    transform: translateY(-100%) translateX(0) scale(0.9); }
+  65%,
+            100% {
+    opacity: 0;
+    transform: translateY(-100%) scale(0.8); } }
+footer {
+  width: 100%; }
+  footer .contact_address_2 {
+    display: none; }
+  footer .contact_address_1 {
+    width: 100%;
+    display: flex; }
+    footer .contact_address_1 .address {
+      order: 1; }
+    footer .contact_address_1 .blank {
+      order: 2; }
+    footer .contact_address_1 .contact {
+      order: 3; }
+    footer .contact_address_1 .address,
+    footer .contact_address_1 .contact,
+    footer .contact_address_1 .blank {
+      width: calc(100% / 3);
+      margin: 1rem 0;
+      display: grid;
+      place-content: center; }
+      footer .contact_address_1 .address h3,
+      footer .contact_address_1 .contact h3,
+      footer .contact_address_1 .blank h3 {
+        color: #7FA800;
+        font-size: 1.3rem;
+        margin: .5rem; }
+        footer .contact_address_1 .address h3 i,
+        footer .contact_address_1 .contact h3 i,
+        footer .contact_address_1 .blank h3 i {
+          margin: 0 1rem; }
+  footer .cprofile_sec {
+    width: 100%;
+    display: flex;
+    margin-bottom: 3rem; }
+    footer .cprofile_sec .copy_right,
+    footer .cprofile_sec .designed_by,
+    footer .cprofile_sec .social {
+      width: calc(100% / 3);
+      display: grid;
+      place-content: center; }
+      footer .cprofile_sec .copy_right h4,
+      footer .cprofile_sec .designed_by h4,
+      footer .cprofile_sec .social h4 {
+        font-family: 'Electrolize', sans-serif;
+        color: #565353;
+        font-size: 1.2rem; }
+    footer .cprofile_sec .copy_right {
+      order: 1; }
+      footer .cprofile_sec .copy_right h4 {
+        margin: 0 4rem 0 0; }
+    footer .cprofile_sec .designed_by {
+      order: 3; }
+      footer .cprofile_sec .designed_by h4 {
+        margin: 0 0 0 1rem; }
+    footer .cprofile_sec .social {
+      order: 2;
+      display: flex;
+      justify-content: center; }
+      footer .cprofile_sec .social .icon {
+        margin: 0 1rem; }
+        footer .cprofile_sec .social .icon i {
+          font-size: 2rem;
+          color: #565353; }
+  footer .footer_img img {
+    width: 100%; }
+
+@media only screen and (max-width: 1290px) {
+  footer .contact_address_1 .address h3,
+  footer .contact_address_1 .contact h3,
+  footer .contact_address_1 .blank h3 {
+    font-size: 1.1rem; }
+  footer .cprofile_sec .copy_right h4,
+  footer .cprofile_sec .designed_by h4,
+  footer .cprofile_sec .social h4 {
+    font-size: 1rem; } }
+@media only screen and (max-width: 1150px) {
+  .organisations_we_serve .org_slider .glide {
+    width: 100%; }
+    .organisations_we_serve .org_slider .glide .glide__track ul li {
+      padding: 5px; }
+
+  .testimonials_con .customersrepeat .img_on_text {
+    width: 90%; }
+    .testimonials_con .customersrepeat .img_on_text .text h2 {
+      font-size: 8em;
+      line-height: 1; }
+    .testimonials_con .customersrepeat .img_on_text .text span {
+      font-size: 2.5rem; }
+  .testimonials_con .testimonial_slid .cards {
+    margin-right: 28%; }
+    .testimonials_con .testimonial_slid .cards .outer .card {
+      max-width: 22rem; } }
+@media only screen and (max-width: 1050px) {
+  .heading {
+    font-size: 3.5rem; }
+
+  footer .contact_address_1 .address h3,
+  footer .contact_address_1 .contact h3,
+  footer .contact_address_1 .blank h3 {
+    font-size: .9rem; }
+  footer .cprofile_sec .copy_right h4,
+  footer .cprofile_sec .designed_by h4,
+  footer .cprofile_sec .social h4 {
+    font-size: .8rem; }
+  footer .cprofile_sec .social .icon i {
+    font-size: 1.3rem; } }
+@media only screen and (max-width: 900px) {
+  .heading {
+    font-size: 3rem; }
+
+  .zev .numbers .our_exp h1 {
+    font-size: 2.5rem; }
+  .zev .numbers .our_exp p {
+    font-size: 1.7rem; }
+
+  .testimonials_con {
+    flex-direction: column; }
+    .testimonials_con .customersrepeat {
+      width: 100%;
+      justify-content: center; }
+      .testimonials_con .customersrepeat .img_on_text {
+        width: 90%; }
+    .testimonials_con .testimonial_slid {
+      width: 100%; }
+      .testimonials_con .testimonial_slid .cards {
+        margin-right: 10%; }
+        .testimonials_con .testimonial_slid .cards .outer .card {
+          max-width: 80%; } }
+@media only screen and (max-width: 790px) {
+  footer .contact_address_1 {
+    display: none; }
+  footer .contact_address_2 {
+    display: block; }
+    footer .contact_address_2 .cont {
+      display: flex;
+      justify-content: center; }
+      footer .contact_address_2 .cont .add {
+        width: fit-content; }
+        footer .contact_address_2 .cont .add h3 {
+          color: #7FA800;
+          font-size: 1.3rem;
+          font-family: 'Electrolize', sans-serif; }
+          footer .contact_address_2 .cont .add h3 i {
+            margin: 0 1rem; }
+  footer .cprofile_sec {
+    flex-direction: column;
+    justify-content: center; }
+    footer .cprofile_sec .copy_right,
+    footer .cprofile_sec .designed_by,
+    footer .cprofile_sec .social {
+      width: calc(100%);
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem; }
+      footer .cprofile_sec .copy_right h4,
+      footer .cprofile_sec .designed_by h4,
+      footer .cprofile_sec .social h4 {
+        width: fit-content;
+        font-size: 1.2rem; }
+    footer .cprofile_sec .copy_right {
+      order: 1; }
+    footer .cprofile_sec .designed_by {
+      order: 2; }
+    footer .cprofile_sec .social {
+      order: 3; } }
+@media only screen and (max-width: 768px) {
+  .zev .org_name .zev_name {
+    font-size: 2.5rem; }
+    .zev .org_name .zev_name span {
+      font-size: 1.6rem; }
+  .zev .mid_text {
+    font-size: 5rem; }
+  .zev .numbers .our_exp h1 {
+    font-size: 2rem; }
+  .zev .numbers .our_exp p {
+    font-size: 1.5rem; }
+
+  .Our_Services .services .service_image {
+    width: 15rem; }
+    .Our_Services .services .service_image .circle {
+      margin: 1rem; }
+  .Our_Services .services .img_and_name h4 {
+    font-size: 1.2rem !important; } }
+@media only screen and (max-width: 604px) {
+  .heading {
+    font-size: 2.5rem; }
+
+  .zev .numbers .our_exp h1 {
+    font-size: 1.5rem; }
+  .zev .numbers .our_exp p {
+    font-size: 1.2rem; } }
+@media only screen and (max-width: 500px) {
+  .heading {
+    font-size: 2rem; }
+
+  .zev .org_name .zev_name {
+    font-size: 1.8rem; }
+    .zev .org_name .zev_name span {
+      font-size: 1.2rem; }
+  .zev .mid_text {
+    font-size: 3rem;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, 0); }
+  .zev .numbers .our_exp {
+    width: 100%; }
+    .zev .numbers .our_exp h1 {
+      font-size: 1.4rem; }
+    .zev .numbers .our_exp p {
+      font-size: 1rem; }
+
+  .Our_Services .services .service_image {
+    width: 12rem; }
+  .Our_Services .services .img_and_name h4 {
+    font-size: 1rem !important; }
+
+  .testimonials_con .customersrepeat .img_on_text .text h2 {
+    font-size: 5em;
+    line-height: 1; }
+  .testimonials_con .customersrepeat .img_on_text .text span {
+    font-size: 2rem; }
+
+  footer .contact_address_2 .cont .add h3 {
+    font-size: 1rem; }
+  footer .cprofile_sec .copy_right h4,
+  footer .cprofile_sec .designed_by h4,
+  footer .cprofile_sec .social h4 {
+    font-size: .9rem; } }
+@media only screen and (max-width: 405px) {
+  .heading {
+    font-size: 1.8rem; }
+
+  .zev {
+    background-image: url("../asset/home/phone-bg.png"); }
+    .zev .org_name img {
+      width: 3rem; }
+    .zev .org_name .zev_name {
+      font-size: 1.5rem; }
+      .zev .org_name .zev_name span {
+        font-size: 1.1rem; }
+    .zev .mid_text {
+      font-size: 2.5rem;
+      left: 50%;
+      top: 30%;
+      transform: translate(-50%, 0); }
+    .zev .numbers .our_exp {
+      width: 100%; }
+      .zev .numbers .our_exp h1 {
+        font-size: 1.3rem; }
+      .zev .numbers .our_exp p {
+        font-size: .9rem; }
+
+  .Our_Services .services .service_image {
+    width: 10rem; }
+    .Our_Services .services .service_image .circle {
+      margin: .5rem; }
+  .Our_Services .services .img_and_name h4 {
+    font-size: .9rem !important; }
+
+  .testimonials_con .customersrepeat .img_on_text .text h2 {
+    font-size: 4em; }
+  .testimonials_con .customersrepeat .img_on_text .text span {
+    font-size: 1.5rem; } }
+@media (max-width: 467px) {
+  /*Edited*/
+  .card {
+    font-size: 10px;
+    padding: 0.5rem !important;
+    margin: 0.5rem; }
+
+  @keyframes animate {
+    0% {
+      opacity: 0;
+      transform: translateY(100%) scale(0.8); }
+    5%,
+        20% {
+      opacity: 0.4;
+      transform: translateY(100%) translateX(0) scale(0.9); }
+    25%,
+        40% {
+      opacity: 1;
+      pointer-events: all;
+      transform: translateY(0%) translateX(2rem) scale(1); }
+    45%,
+        60% {
+      opacity: 0.4;
+      transform: translateY(-100%) translateX(0) scale(0.9); }
+    65%,
+        100% {
+      opacity: 0;
+      transform: translateY(-100%) scale(0.8); } } }
+@media only screen and (max-width: 356px) {
+  .heading {
+    font-size: 1.5rem; }
+
+  .testimonials_con .testimonial_slid .cards {
+    height: 32rem; } }
+@media only screen and (max-width: 375px) {
+  .zev .numbers .our_exp h1 {
+    font-size: 1.2rem; }
+  .zev .numbers .our_exp p {
+    font-size: .8rem; } }
+@media only screen and (max-width: 343px) {
+  .testimonials_con .testimonial_slid .cards {
+    height: 34rem; } }
+
+/*# sourceMappingURL=style.css.map */
