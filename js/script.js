@@ -12,7 +12,7 @@ counterNum.forEach((curElement) =>{
         // console.log(incrementNumber);
         if (initialNum < targetNumber) {
             curElement.innerText = `${initialNum + incrementNumber }+ `;
-            setTimeout(updateNumber, 90)
+            setTimeout(updateNumber, 300)
         }
 
 
@@ -42,3 +42,10 @@ const config = {
     }
   }
   new Glide('.glide', config).mount()
+
+
+
+  var video = document.querySelector('video');
+  video.muted = true;
+  video.play()
+  
