@@ -26,6 +26,15 @@
 
         }
     }
+    .testimonials_con {
+        .customersrepeat {
+            .img_on_text {
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 1150px) {
@@ -192,7 +201,7 @@
                         color: $green;
                         font-size: 1.3rem;
                         font-family: 'Electrolize', sans-serif;
-
+                        margin-top: 1rem;
                         i {
                             margin: 0 1rem;
 
@@ -224,6 +233,9 @@
 
             .copy_right {
                 order: 1;
+                h4{
+                    margin: auto;
+                }
             }
 
             .designed_by {
@@ -412,7 +424,7 @@
     }
 
     .zev {
-        background-image: url('../asset/home/phone-bg.png');
+        // background-image: url('../asset/home/phone-bg.png');
 
         .org_name {
             img {
@@ -482,6 +494,11 @@
                 }
             }
         }
+        .testimonial_slid{
+            .cards{
+                height: 31rem;
+            }
+         }   
     }
 }
 
