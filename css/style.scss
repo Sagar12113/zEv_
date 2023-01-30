@@ -105,6 +105,24 @@
         }
     }
 
+    .org_works{
+        position: absolute;
+        top: 30%;
+        left: 50%;
+
+        h1{
+            color: $icon;
+              font-size: 55px;
+              padding: 15px;
+              font-family: sans-serif;
+          }
+          span{
+              border-right: 2px solid $green;
+              font-size: 55px;
+              font-family: sans-serif;
+              color: $green;
+          }
+    }
 
     .numbers {
         position: absolute;
@@ -239,8 +257,9 @@
 
                             img {
                                 margin-top: 1rem;
-                                width: 150px;
-                                height: 150px;
+                                // width: 150px;
+                                // height: 150px;
+                                // aspect-ratio: 1/1;
                             }
 
                             .org_name {

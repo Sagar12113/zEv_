@@ -114,6 +114,20 @@ section {
         height: 100%;
         background: #7FA800;
         left: -.8rem; }
+  .zev .org_works {
+    position: absolute;
+    top: 30%;
+    left: 50%; }
+    .zev .org_works h1 {
+      color: #565353;
+      font-size: 55px;
+      padding: 15px;
+      font-family: sans-serif; }
+    .zev .org_works span {
+      border-right: 2px solid #7FA800;
+      font-size: 55px;
+      font-family: sans-serif;
+      color: #7FA800; }
   .zev .numbers {
     position: absolute;
     bottom: 0;
@@ -185,9 +199,7 @@ section {
         box-shadow: 0 0 6px rgba(0, 0, 0, 0.16);
         min-height: 400px; }
         .organisations_we_serve .org_slider .glide .glide__track ul li .content_box img {
-          margin-top: 1rem;
-          width: 150px;
-          height: 150px; }
+          margin-top: 1rem; }
         .organisations_we_serve .org_slider .glide .glide__track ul li .content_box .org_name {
           font-family: 'Electrolize', sans-serif;
           color: #7FA800;
