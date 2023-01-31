@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
 * {
   padding: 0;
@@ -179,15 +180,25 @@ section {
       color: #7FA800;
       font-size: 1.2rem;
       font-family: 'Electrolize', sans-serif; }
-.Our_Services .modal .modal-dialog .modal-content .modal-header {
-  justify-content: center !important; }
-  .Our_Services .modal .modal-dialog .modal-content .modal-header h1 {
-    color: #7FA800;
-    font-weight: 700;
-    font-size: 1.7rem;
+.Our_Services .modal {
+  --bs-modal-width: 80%; }
+  .Our_Services .modal .modal-dialog .modal-content .modal-header {
+    justify-content: center !important; }
+    .Our_Services .modal .modal-dialog .modal-content .modal-header h1 {
+      color: #7FA800;
+      font-weight: 700;
+      font-size: 1.7rem;
+      text-align: center; }
+  .Our_Services .modal .modal-dialog .modal-content .modal-body .wrap {
+    max-width: 900px;
+    margin: 0 auto; }
+  .Our_Services .modal .modal-dialog .modal-content .modal-body .glide__slide {
+    border: 1px solid black;
+    line-height: 100px;
+    margin: 0;
     text-align: center; }
-.Our_Services .modal .modal-dialog .modal-content .modal-footer {
-  justify-content: center !important; }
+  .Our_Services .modal .modal-dialog .modal-content .modal-footer {
+    justify-content: center !important; }
 
 .organisations_we_serve .org_slider {
   width: 100%; }
@@ -225,7 +236,47 @@ section {
   margin: auto;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAIAAACRXR/mAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAABnSURBVHja7M5RDYAwDEXRDgmvEocnlrQS2SwUFST9uEfBGWs9c97nbGtDcquqiKhOImLs/UpuzVzWEi1atGjRokWLFi1atGjRokWLFi1atGjRokWLFi1af7Ukz8xWp8z8AAAA//8DAJ4LoEAAlL1nAAAAAElFTkSuQmCC") repeat 0 0;
+  /* Main styles */
+  color: #999;
+  -webkit-animation: bg-scrolling-reverse .92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse .92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse .92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse .92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+  /* Animations */ }
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px; } }
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px; } }
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px; } }
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px; } }
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px; } }
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px; } }
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px; } }
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px; } }
   .deal_vehicles .vehicles_info {
     width: 12rem;
     height: 12rem;
@@ -663,16 +714,18 @@ footer {
     margin: 0px calc(50% - 6.2rem);
     width: 4rem;
     height: 4rem; }
+    .bt .battery-wrapper1:hover {
+      cursor: pointer; }
     .bt .battery-wrapper1 .battery-part-big {
       width: 200px;
-      height: 4rem;
+      height: 3.5rem;
       border: 4px solid #565353;
       border-radius: 3px;
       border-radius: .5rem;
       position: relative; }
       .bt .battery-wrapper1 .battery-part-big .battery-part-small {
         width: 12px;
-        height: 40px;
+        height: 25px;
         background: #565353;
         border-radius: 0 3px 3px 0;
         position: absolute;
@@ -681,13 +734,15 @@ footer {
         transform: translate(0, -50%); }
       .bt .battery-wrapper1 .battery-part-big .text {
         position: absolute;
-        left: 50%;
+        left: 10%;
         top: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 1.2rem; }
+        transform: translate(6%, -50%);
+        font-size: 1.6rem;
+        font-weight: 900;
+        font-family: electrolize; }
       .bt .battery-wrapper1 .battery-part-big .battery-power {
         width: calc(100% / 6 - 10px);
-        height: 3rem;
+        height: 2.5rem;
         margin: .25rem 0 0 .3rem;
         display: inline-block; }
       .bt .battery-wrapper1 .battery-part-big .battery-power-1,

@@ -1,3 +1,5 @@
+
+//zev counting
 $('.count_1, .count_2, .count_3 ').each(function () {
   $(this).prop('Counter',0).animate({
       Counter: $(this).text()
@@ -10,28 +12,6 @@ $('.count_1, .count_2, .count_3 ').each(function () {
       }
   });
 });
-$('.count_2').each(function () {
-  $(this).prop('Counter',0).animate({
-      Counter: $(this).text()
-  }, {
-      duration: 4000,
-      easing: 'swing',
-      step: function (now) {
-          $(this).text(Math.ceil(now));
-      }
-  });
-});
-$('.count_3').each(function () {
-  $(this).prop('Counter',0).animate({
-      Counter: $(this).text()
-  }, {
-      duration: 4000,
-      easing: 'swing',
-      step: function (now) {
-          $(this).text(Math.ceil(now));
-      }
-  });
-});
 
 
 
@@ -41,8 +21,7 @@ $('.count_3').each(function () {
 
 
 
-
-
+//glide slider
 const config = {
     type: 'carousel',
     startAt: 0,
@@ -64,6 +43,8 @@ const config = {
 
 
 
+  
+// video autoplay
   var video = document.querySelector('video');
   video.muted = true;
   video.play()
@@ -71,7 +52,7 @@ const config = {
 
 
   
-
+//zev  animated text
   var TxtRotate = function(el, toRotate, period) {
     this.toRotate = toRotate;
     this.el = el;
@@ -128,7 +109,5 @@ const config = {
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
   };
-  
-  
-  
+
   Resources
