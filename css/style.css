@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Exo:100);
 @import url("https://fonts.googleapis.com/css2?family=Electrolize&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,600,700|Roboto:300,400,500,700");
 * {
   padding: 0;
   margin: 0;
@@ -36,6 +37,95 @@ section {
   align-items: center;
   margin: 1rem 0 0 0; }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; }
+  body.loaded {
+    overflow-y: auto; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100000000; }
+  .overlay .overlayDoor:before, .overlay .overlayDoor:after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background: #111;
+    transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1);
+    transition-delay: .8s; }
+  .overlay .overlayDoor:before {
+    left: 0; }
+  .overlay .overlayDoor:after {
+    right: 0; }
+  .overlay.loaded .overlayDoor:before {
+    left: -50%; }
+  .overlay.loaded .overlayDoor:after {
+    right: -50%; }
+  .overlay.loaded .overlayContent {
+    opacity: 0;
+    margin-top: -15px; }
+  .overlay .overlayContent {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s cubic-bezier(0.77, 0, 0.18, 1); }
+    .overlay .overlayContent .skip {
+      display: block;
+      width: 130px;
+      text-align: center;
+      margin: 50px auto 0;
+      cursor: pointer;
+      color: #fff;
+      font-family: 'Nunito';
+      font-weight: 700;
+      padding: 12px 0;
+      border: 2px solid #fff;
+      border-radius: 3px;
+      transition: 0.2s ease; }
+      .overlay .overlayContent .skip:hover {
+        background: #ddd;
+        color: #444;
+        border-color: #ddd; }
+
+.loader {
+  width: 128px;
+  height: 128px;
+  border: 3px solid #fff;
+  border-bottom: 3px solid transparent;
+  border-radius: 50%;
+  position: relative;
+  animation: spin 1s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .loader .inner {
+    width: 64px;
+    height: 64px;
+    border: 3px solid transparent;
+    border-top: 3px solid #fff;
+    border-radius: 50%;
+    animation: spinInner 1s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes spinInner {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-720deg); } }
 .zev {
   position: relative;
   width: 100%;
@@ -189,14 +279,6 @@ section {
       font-weight: 700;
       font-size: 1.7rem;
       text-align: center; }
-  .Our_Services .modal .modal-dialog .modal-content .modal-body .wrap {
-    max-width: 900px;
-    margin: 0 auto; }
-  .Our_Services .modal .modal-dialog .modal-content .modal-body .glide__slide {
-    border: 1px solid black;
-    line-height: 100px;
-    margin: 0;
-    text-align: center; }
   .Our_Services .modal .modal-dialog .modal-content .modal-footer {
     justify-content: center !important; }
 
@@ -716,56 +798,74 @@ footer {
     height: 4rem; }
     .bt .battery-wrapper1:hover {
       cursor: pointer; }
-    .bt .battery-wrapper1 .battery-part-big {
-      width: 200px;
-      height: 3.5rem;
-      border: 4px solid #565353;
-      border-radius: 3px;
-      border-radius: .5rem;
-      position: relative; }
-      .bt .battery-wrapper1 .battery-part-big .battery-part-small {
-        width: 12px;
-        height: 25px;
-        background: #565353;
-        border-radius: 0 3px 3px 0;
-        position: absolute;
-        right: -12px;
-        top: 50%;
-        transform: translate(0, -50%); }
-      .bt .battery-wrapper1 .battery-part-big .text {
-        position: absolute;
-        left: 10%;
-        top: 50%;
-        transform: translate(6%, -50%);
-        font-size: 1.6rem;
-        font-weight: 900;
-        font-family: electrolize; }
-      .bt .battery-wrapper1 .battery-part-big .battery-power {
-        width: calc(100% / 6 - 10px);
-        height: 2.5rem;
-        margin: .25rem 0 0 .3rem;
-        display: inline-block; }
-      .bt .battery-wrapper1 .battery-part-big .battery-power-1,
-      .bt .battery-wrapper1 .battery-part-big .battery-power-2,
-      .bt .battery-wrapper1 .battery-part-big .battery-power-3,
-      .bt .battery-wrapper1 .battery-part-big .battery-power-4,
-      .bt .battery-wrapper1 .battery-part-big .battery-power-5,
-      .bt .battery-wrapper1 .battery-part-big .battery-power-6 {
-        opacity: 0;
-        background: #e6e6e6;
-        border-radius: 3px; }
-      .bt .battery-wrapper1 .battery-part-big .battery-power-1 {
-        animation: battery-power-1 4s 0s infinite; }
-      .bt .battery-wrapper1 .battery-part-big .battery-power-2 {
-        animation: battery-power-2 4s 0s infinite; }
-      .bt .battery-wrapper1 .battery-part-big .battery-power-3 {
-        animation: battery-power-3 4s 0s infinite; }
-      .bt .battery-wrapper1 .battery-part-big .battery-power-4 {
-        animation: battery-power-4 4s 0s infinite; }
-      .bt .battery-wrapper1 .battery-part-big .battery-power-5 {
-        animation: battery-power-5 4s 0s infinite; }
-      .bt .battery-wrapper1 .battery-part-big .battery-power-6 {
-        animation: battery-power-6 4s 0s infinite; }
+  .bt .battery-wrapper2 {
+    margin: 0px calc(50% - 3.1rem);
+    width: 4rem;
+    height: 4rem; }
+    .bt .battery-wrapper2:hover {
+      cursor: pointer; }
+  .bt .battery-part-big_1, .bt .battery-part-big_2 {
+    height: 3.5rem;
+    border: 4px solid #565353;
+    border-radius: 3px;
+    border-radius: .5rem;
+    position: relative; }
+  .bt .battery-part-big_1 {
+    width: 200px; }
+    .bt .battery-part-big_1 .text {
+      left: 10%;
+      top: 50%;
+      transform: translate(6%, -50%); }
+    .bt .battery-part-big_1 .battery-power {
+      width: calc(100% / 6 - 10px);
+      margin: .25rem 0 0 .3rem; }
+  .bt .battery-part-big_2 {
+    width: 100px; }
+    .bt .battery-part-big_2 .text {
+      left: 10%;
+      top: 50%;
+      transform: translate(6%, -50%); }
+    .bt .battery-part-big_2 .battery-power {
+      width: calc(100% / 6 - 7px);
+      margin: .25rem 0 0 .1rem; }
+  .bt .text {
+    position: absolute;
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-family: electrolize; }
+  .bt .battery-part-small {
+    width: 12px;
+    height: 25px;
+    background: #565353;
+    border-radius: 0 3px 3px 0;
+    position: absolute;
+    right: -12px;
+    top: 50%;
+    transform: translate(0, -50%); }
+  .bt .battery-power {
+    height: 2.5rem;
+    display: inline-block; }
+  .bt .battery-power-1,
+  .bt .battery-power-2,
+  .bt .battery-power-3,
+  .bt .battery-power-4,
+  .bt .battery-power-5,
+  .bt .battery-power-6 {
+    opacity: 0;
+    background: #e6e6e6;
+    border-radius: 3px; }
+  .bt .battery-power-1 {
+    animation: battery-power-1 4s 0s infinite; }
+  .bt .battery-power-2 {
+    animation: battery-power-2 4s 0s infinite; }
+  .bt .battery-power-3 {
+    animation: battery-power-3 4s 0s infinite; }
+  .bt .battery-power-4 {
+    animation: battery-power-4 4s 0s infinite; }
+  .bt .battery-power-5 {
+    animation: battery-power-5 4s 0s infinite; }
+  .bt .battery-power-6 {
+    animation: battery-power-6 4s 0s infinite; }
 @keyframes battery-power-1 {
   0% {
     opacity: 0; }

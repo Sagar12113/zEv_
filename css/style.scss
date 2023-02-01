@@ -105,23 +105,24 @@
         }
     }
 
-    .org_works{
+    .org_works {
         position: absolute;
         top: 30%;
         left: 50%;
 
-        h1{
+        h1 {
             color: $icon;
-              font-size: 55px;
-              padding: 15px;
-              font-family: sans-serif;
-          }
-          span{
-              border-right: 2px solid $green;
-              font-size: 55px;
-              font-family: sans-serif;
-              color: $green;
-          }
+            font-size: 55px;
+            padding: 15px;
+            font-family: sans-serif;
+        }
+
+        span {
+            border-right: 2px solid $green;
+            font-size: 55px;
+            font-family: sans-serif;
+            color: $green;
+        }
     }
 
     .numbers {
@@ -212,6 +213,7 @@
 
     .modal {
         --bs-modal-width: 80%;
+
         .modal-dialog {
             .modal-content {
                 .modal-header {
@@ -226,18 +228,8 @@
                 }
 
                 .modal-body {
-                    .wrap {
-                        max-width: 900px;
-                        margin: 0 auto;
-                      }
-                      .glide__slide {
-                        border: 1px solid black;
-                        line-height: 100px;
-                        margin: 0;
-                        text-align: center;
-                      }
-                    
-                 
+                   
+
                 }
 
                 .modal-footer {
@@ -319,46 +311,72 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-  background: url($bg-url) repeat 0 0;
-/* Main styles */
-color: #999;
--webkit-animation: bg-scrolling-reverse .92s infinite; /* Safari 4+ */
--moz-animation:    bg-scrolling-reverse .92s infinite; /* Fx 5+ */
--o-animation:      bg-scrolling-reverse .92s infinite; /* Opera 12+ */
-animation:         bg-scrolling-reverse .92s infinite; /* IE 10+ */
--webkit-animation-timing-function: linear;
--moz-animation-timing-function:    linear;
--o-animation-timing-function:      linear;
-animation-timing-function:         linear;
+    background: url($bg-url) repeat 0 0;
+    /* Main styles */
+    color: #999;
+    -webkit-animation: bg-scrolling-reverse .92s infinite;
+    /* Safari 4+ */
+    -moz-animation: bg-scrolling-reverse .92s infinite;
+    /* Fx 5+ */
+    -o-animation: bg-scrolling-reverse .92s infinite;
+    /* Opera 12+ */
+    animation: bg-scrolling-reverse .92s infinite;
+    /* IE 10+ */
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
 
-    
 
-/* Animations */
-@-webkit-keyframes bg-scrolling-reverse {
-  100% { background-position: $bg-width $bg-height; }
-}
-@-moz-keyframes    bg-scrolling-reverse {
-  100% { background-position: $bg-width $bg-height; }
-}
-@-o-keyframes      bg-scrolling-reverse {
-  100% { background-position: $bg-width $bg-height; }
-}
-@keyframes         bg-scrolling-reverse {
-  100% { background-position: $bg-width $bg-height; }
-}
 
-@-webkit-keyframes bg-scrolling {
-  0% { background-position: $bg-width $bg-height; }
-}
-@-moz-keyframes    bg-scrolling {
-  0% { background-position: $bg-width $bg-height; }
-}
-@-o-keyframes      bg-scrolling {
-  0% { background-position: $bg-width $bg-height; }
-}
-@keyframes         bg-scrolling {
-  0% { background-position: $bg-width $bg-height; }
-}
+    /* Animations */
+    @-webkit-keyframes bg-scrolling-reverse {
+        100% {
+            background-position: $bg-width $bg-height;
+        }
+    }
+
+    @-moz-keyframes bg-scrolling-reverse {
+        100% {
+            background-position: $bg-width $bg-height;
+        }
+    }
+
+    @-o-keyframes bg-scrolling-reverse {
+        100% {
+            background-position: $bg-width $bg-height;
+        }
+    }
+
+    @keyframes bg-scrolling-reverse {
+        100% {
+            background-position: $bg-width $bg-height;
+        }
+    }
+
+    @-webkit-keyframes bg-scrolling {
+        0% {
+            background-position: $bg-width $bg-height;
+        }
+    }
+
+    @-moz-keyframes bg-scrolling {
+        0% {
+            background-position: $bg-width $bg-height;
+        }
+    }
+
+    @-o-keyframes bg-scrolling {
+        0% {
+            background-position: $bg-width $bg-height;
+        }
+    }
+
+    @keyframes bg-scrolling {
+        0% {
+            background-position: $bg-width $bg-height;
+        }
+    }
 
 
 
@@ -684,19 +702,60 @@ footer {
         width: 4rem;
         height: 4rem;
 
-        &:hover{
+        &:hover {
             cursor: pointer;
         }
+    }
+    .battery-wrapper2 {
+        margin: 0px calc(50% - 3.1rem);
+        width: 4rem;
+        height: 4rem;
 
-        .battery-part-big {
-            width: 200px;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+        .battery-part-big_1, .battery-part-big_2{
             height: 3.5rem;
             border: 4px solid $icon;
             // background:#5E5E5E;
             border-radius: 3px;
             border-radius: .5rem;
             position: relative;
+        }
+        .battery-part-big_1{
+            width: 200px;
+            .text{
+                left: 10%;
+            top: 50%;
+            transform: translate(6%, -50%);
+            }
+            .battery-power {
+                width: calc(100% / 6 - 10px);
+                margin: .25rem 0 0 .3rem;
 
+            }
+        }
+        .battery-part-big_2{
+            width: 100px;
+            .text{
+            left: 10%;
+            top: 50%;
+            transform: translate(6%, -50%);
+        }
+            .battery-power {
+                // width:40px;
+                width: calc(100% / 6 - 7px);
+                margin: .25rem 0 0 .1rem;
+
+            }
+        }
+        .text {
+            position: absolute;
+            font-size: 1.6rem;
+            font-weight: 900;
+            font-family: electrolize;
+        }
             .battery-part-small {
                 // margin-top:13px;
                 width: 12px;
@@ -709,21 +768,12 @@ footer {
                 transform: translate(0, -50%);
             }
 
-            .text {
-                position: absolute;
-                left: 10%;
-                top: 50%;
-                transform: translate(6%, -50%);
-                font-size: 1.6rem;
-                font-weight: 900;
-                font-family: electrolize;
-            }
+            
 
             .battery-power {
                 // width:40px;
-                width: calc(100% / 6 - 10px);
+                // width: calc(100% / 6 - 10px);
                 height: 2.5rem;
-                margin: .25rem 0 0 .3rem;
                 display: inline-block;
             }
 
@@ -946,8 +996,6 @@ footer {
                     opacity: 1;
                 }
             }
-        }
-    }
 
 
 }

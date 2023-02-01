@@ -17,6 +17,17 @@
 </head>
 
 <body>
+
+  <div class="overlay">
+    <div class="overlayDoor"></div>
+    <div class="overlayContent">
+      <div class="loader">
+        <div class="inner"></div>
+      </div>
+    </div>
+  </div>
+  
+  
   <div class="zev">
     <div class="wave"></div>
     <!-- <div class="wave_2"></div> -->
@@ -139,7 +150,7 @@
 
       <!-- Battery 1 -->
       <div class="battery-wrapper1" data-bs-toggle="modal" data-bs-target="#Know_More_modal">
-        <div class="battery-part-big">
+        <div class="battery-part-big_1">
           <div class="battery-power battery-power-1"></div>
           <div class="battery-power battery-power-2"></div>
           <div class="battery-power battery-power-3"></div>
@@ -171,8 +182,8 @@
               <div class="bt">
 
                 <!-- Battery 1 -->
-                <div class="battery-wrapper1">
-                  <div class="battery-part-big">
+                <div class="battery-wrapper2">
+                  <div class="battery-part-big_2">
                     <div class="battery-power battery-power-1"></div>
                     <div class="battery-power battery-power-2"></div>
                     <div class="battery-power battery-power-3"></div>
@@ -576,7 +587,7 @@
   </footer>
 
 
-
+  
 
 
 
@@ -594,7 +605,27 @@
  
   <script src="js/script.js"></script>
   
-
+<script>
+  $(document).ready(function() {
+	// Users can skip the loading process if they want.
+	// $('.skip').click(function() {
+	// 	$('.overlay, body').addClass('loaded');
+	// })
+	
+	// Will wait for everything on the page to load.
+	$(window).bind('load', function() {
+		$('.overlay, body').addClass('loaded');
+		setTimeout(function() {
+			$('.overlay').css({'display':'none'})
+		}, 6000)
+	});
+	
+	// Will remove overlay after 1min for users cannnot load properly.
+	setTimeout(function() {
+		$('.overlay, body').addClass('loaded');
+	}, 6000);
+})
+</script>
 
 
 
