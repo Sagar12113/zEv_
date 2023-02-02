@@ -66,125 +66,397 @@ section {
 
 
 
-@import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700|Roboto:300,400,500,700');
+// @import url('https://fonts.googleapis.com/css?family=Nunito:400,600,700|Roboto:300,400,500,700');
 
 
-body {
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	&.loaded {
-		overflow-y: auto;
-	}
+// body {
+// 	margin: 0;
+// 	padding: 0;
+// 	overflow: hidden;
+// 	&.loaded {
+// 		overflow-y: auto;
+// 	}
+// }
+
+// .overlay {
+// 	position: fixed;
+// 	top: 0;
+// 	left: 0;
+// 	width: 100%;
+// 	height: 100%;
+// 	z-index: 100000000;
+// 	.overlayDoor {
+// 		&:before, &:after {
+// 			content: "";
+// 			position: absolute;
+// 			width: 50%;
+// 			height: 100%;
+// 			background: #111;
+// 			transition: .5s cubic-bezier(.77,0,.18,1);
+// 			transition-delay: .8s;
+// 		}
+// 		&:before {
+// 			left: 0;
+// 		}
+// 		&:after {
+// 			right: 0;
+// 		}
+// 	}
+// 	&.loaded {
+// 		.overlayDoor {
+// 			&:before {
+// 				left: -50%;
+// 			}
+// 			&:after {
+// 				right: -50%;
+// 			}
+// 		}
+// 		.overlayContent {
+// 			opacity: 0;
+// 			margin-top: -15px;
+// 		}
+// 	}
+// 	.overlayContent {
+// 		position: relative;
+// 		width: 100%;
+// 		height: 100%;
+// 		display: flex;
+// 		justify-content: center;
+// 		align-items: center;
+// 		flex-direction: column;
+// 		transition: .5s cubic-bezier(.77,0,.18,1);
+// 		.skip {
+// 			display: block;
+// 			width: 130px;
+// 			text-align: center;
+// 			margin: 50px auto 0;
+// 			cursor: pointer;
+// 			color: #fff;
+// 			font-family: 'Nunito';
+// 			font-weight: 700;
+// 			padding: 12px 0;
+// 			border: 2px solid #fff;
+// 			border-radius: 3px;
+// 			transition: 0.2s ease;
+// 			&:hover {
+// 				background: #ddd;
+// 				color: #444;
+// 				border-color: #ddd;
+// 			}
+// 		}
+// 	}
+// }
+// .loader {
+// 	width: 128px;
+// 	height: 128px;
+// 	border: 3px solid #fff;
+// 	border-bottom: 3px solid transparent;
+// 	border-radius: 50%;
+// 	position: relative;
+// 	animation: spin 1s linear infinite;
+// 	display: flex;
+// 	justify-content: center;
+// 	align-items: center;
+// 	.inner {
+// 		width: 64px;
+// 		height: 64px;
+// 		border: 3px solid transparent;
+// 		border-top: 3px solid #fff;
+// 		border-radius: 50%;
+// 		animation: spinInner 1s linear infinite;
+// 	}
+// }
+// @keyframes spin {
+// 	0% {
+// 		transform: rotate(0deg);
+// 	}
+// 	100% {
+// 		transform: rotate(360deg);
+// 	}
+// }
+// @keyframes spinInner {
+// 	0% {
+// 		transform: rotate(0deg);
+// 	}
+// 	100% {
+// 		transform: rotate(-720deg);
+// 	}
+// }
+
+
+.bt {
+
+    /*Battery 1*/
+    .battery-wrapper1 {
+        margin: 0px calc(50% - 6.2rem);
+        width: 4rem;
+        height: 4rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        .battery-part-big {
+            width: 200px;
+            height: 4rem;
+            border: 4px solid $icon;
+            // background:#5E5E5E;
+            border-radius: 3px;
+            border-radius: .5rem;
+            position: relative;
+
+            .battery-part-small {
+                // margin-top:13px;
+                width: 12px;
+                height: 40px;
+                background: $icon;
+                border-radius: 0 3px 3px 0;
+                position: absolute;
+                right: -12px;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+
+            .text {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.2rem;
+            }
+
+            .battery-power {
+                // width:40px;
+                width: calc(100% / 6 - 10px);
+                height: 3rem;
+                margin: .25rem 0 0 .3rem;
+                display: inline-block;
+            }
+
+            .battery-power-1,
+            .battery-power-2,
+            .battery-power-3,
+            .battery-power-4,
+            .battery-power-5,
+            .battery-power-6 {
+                opacity: 0;
+                background: $btry;
+                border-radius: 3px;
+
+            }
+
+            .battery-power-1 {
+                animation: battery-power-1 4s 0s infinite;
+            }
+
+            .battery-power-2 {
+                animation: battery-power-2 4s 0s infinite;
+            }
+
+            .battery-power-3 {
+                animation: battery-power-3 4s 0s infinite;
+            }
+
+            .battery-power-4 {
+                animation: battery-power-4 4s 0s infinite;
+            }
+
+            .battery-power-5 {
+                animation: battery-power-5 4s 0s infinite;
+
+            }
+
+            .battery-power-6 {
+                animation: battery-power-6 4s 0s infinite;
+
+            }
+
+            @keyframes battery-power-1 {
+                0% {
+                    opacity: 0;
+                }
+
+                16% {
+                    opacity: 1;
+                }
+
+                33% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                66% {
+                    opacity: 1;
+                }
+
+                83% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+
+
+            }
+
+            @keyframes battery-power-2 {
+                0% {
+                    opacity: 0;
+                }
+
+                16% {
+                    opacity: 0;
+                }
+
+                33% {
+                    opacity: 1;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                66% {
+                    opacity: 1;
+                }
+
+                83% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes battery-power-3 {
+                0% {
+                    opacity: 0;
+                }
+
+                16% {
+                    opacity: 0;
+                }
+
+                33% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 1;
+                }
+
+                66% {
+                    opacity: 1;
+                }
+
+                83% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes battery-power-4 {
+                0% {
+                    opacity: 0;
+                }
+
+                16% {
+                    opacity: 0;
+                }
+
+                33% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                66% {
+                    opacity: 1;
+                }
+
+                83% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes battery-power-5 {
+                0% {
+                    opacity: 0;
+                }
+
+                16% {
+                    opacity: 0;
+                }
+
+                33% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                66% {
+                    opacity: 0;
+                }
+
+                83% {
+                    opacity: 1;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            @keyframes battery-power-6 {
+                0% {
+                    opacity: 0;
+                }
+
+                16% {
+                    opacity: 0;
+                }
+
+                33% {
+                    opacity: 0;
+                }
+
+                50% {
+                    opacity: 0;
+                }
+
+                66% {
+                    opacity: 0;
+                }
+
+                83% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+
+
 }
-
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	z-index: 100000000;
-	.overlayDoor {
-		&:before, &:after {
-			content: "";
-			position: absolute;
-			width: 50%;
-			height: 100%;
-			background: #111;
-			transition: .5s cubic-bezier(.77,0,.18,1);
-			transition-delay: .8s;
-		}
-		&:before {
-			left: 0;
-		}
-		&:after {
-			right: 0;
-		}
-	}
-	&.loaded {
-		.overlayDoor {
-			&:before {
-				left: -50%;
-			}
-			&:after {
-				right: -50%;
-			}
-		}
-		.overlayContent {
-			opacity: 0;
-			margin-top: -15px;
-		}
-	}
-	.overlayContent {
-		position: relative;
-		width: 100%;
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		flex-direction: column;
-		transition: .5s cubic-bezier(.77,0,.18,1);
-		.skip {
-			display: block;
-			width: 130px;
-			text-align: center;
-			margin: 50px auto 0;
-			cursor: pointer;
-			color: #fff;
-			font-family: 'Nunito';
-			font-weight: 700;
-			padding: 12px 0;
-			border: 2px solid #fff;
-			border-radius: 3px;
-			transition: 0.2s ease;
-			&:hover {
-				background: #ddd;
-				color: #444;
-				border-color: #ddd;
-			}
-		}
-	}
-}
-.loader {
-	width: 128px;
-	height: 128px;
-	border: 3px solid #fff;
-	border-bottom: 3px solid transparent;
-	border-radius: 50%;
-	position: relative;
-	animation: spin 1s linear infinite;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	.inner {
-		width: 64px;
-		height: 64px;
-		border: 3px solid transparent;
-		border-top: 3px solid #fff;
-		border-radius: 50%;
-		animation: spinInner 1s linear infinite;
-	}
-}
-@keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(360deg);
-	}
-}
-@keyframes spinInner {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(-720deg);
-	}
-}
-
-
-
 
 
 
