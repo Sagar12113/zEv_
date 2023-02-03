@@ -223,7 +223,26 @@ section {
                 top: 50%;
                 transform: translate(-50%, -50%);
                 font-size: 1.2rem;
+                
             }
+        
+            .modal__close {
+                background: transparent;
+                border: 0;
+                width: 12rem;
+                height: 4rem;
+                color: $color-darks;
+                position: relative;
+                z-index: 99999;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 1.2rem;
+                display: grid;
+                place-items: center;
+               
+              }
 
             .battery-power {
                 // width:40px;

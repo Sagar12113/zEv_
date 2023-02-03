@@ -139,8 +139,9 @@ li {
 
   .org_works{
       position: absolute;
-      top: 30%;
-      left: 50%;
+      top: 35%;
+      left: 38%;
+      // transform: translate(-50%, 0);
 
       h1{
           color: $icon;
@@ -265,13 +266,13 @@ li {
     display: flex;
     justify-content: center;
     // align-items: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
     .modal__container {
       background-color: #fff;
-      padding: 30px;
+      padding: 15px;
       max-width: 1144px;
       max-height: 80vh;
-      border-radius: 4px;
+      border-radius: 1rem;
       overflow-y: auto;
       box-sizing: border-box;
 
@@ -292,21 +293,11 @@ li {
           color: $green;
           box-sizing: border-box;
         }
-
-        .modal__close {
-          background: transparent;
-          border: 0;
-
-          &:before {
-            content: "\2715";
-          }
-        }
-        
       }
 
       .modal__content {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
         line-height: 1.5;
         color: rgba(0, 0, 0, .8);
         .splide{
@@ -316,9 +307,18 @@ li {
           .splide__arrows{
             .splide__arrow{
               background: none;
-              font-size: 2rem;
+              font-size: 3rem;
               top: 85%;
+              svg {
+                fill: $icon;
+              }
             }
+            // .splide__arrow--prev{
+            //   color: #7FA800;
+            // }
+            // .splide__arrow--next{
+            //   right: -1rem;
+            // }
           }
           .splide__track{
             .splide__list{
@@ -327,13 +327,19 @@ li {
                 justify-content: center;
                 padding: 1rem;
                 .card{
-                  width: 80%;
+                  width: 75%;
                   border: none;
-                  img{
+                  .img_wraper{
                     width: 100%;
-                    height: 300px;
+                    display: grid;
+                    place-items: center;
                     box-shadow: $box-shadow_2;
-                    border-radius: .5rem;
+                    border-radius: $border-radius;
+
+                    img{
+                      width:400px;
+                      height: 300px;
+                    }
                   }
                   
                   .card-body{
@@ -362,58 +368,6 @@ li {
 }
 
 
-
-
-
-
-
-
-
-
-// .modal__btn {
-//   font-size: .875rem;
-//   padding-left: 1rem;
-//   padding-right: 1rem;
-//   padding-top: .5rem;
-//   padding-bottom: .5rem;
-//   background-color: #e6e6e6;
-//   color: rgba(0, 0, 0, .8);
-//   border-radius: .25rem;
-//   border-style: none;
-//   border-width: 0;
-//   cursor: pointer;
-//   -webkit-appearance: button;
-//   text-transform: none;
-//   overflow: visible;
-//   line-height: 1.15;
-//   margin: 0;
-//   will-change: transform;
-//   -moz-osx-font-smoothing: grayscale;
-//   -webkit-backface-visibility: hidden;
-//   backface-visibility: hidden;
-//   -webkit-transform: translateZ(0);
-//   transform: translateZ(0);
-//   transition: -webkit-transform .25s ease-out;
-//   transition: transform .25s ease-out;
-//   transition: transform .25s ease-out, -webkit-transform .25s ease-out;
-// }
-
-// .modal__btn:focus,
-// .modal__btn:hover {
-//   -webkit-transform: scale(1.05);
-//   transform: scale(1.05);
-// }
-
-// .modal__btn-primary {
-//   background-color: #00449e;
-//   color: #fff;
-// }
-
-
-
-/**************************\
-    Demo Animation Style
-  \**************************/
 @keyframes mmfadeIn {
   from {
     opacity: 0;
@@ -485,11 +439,11 @@ li {
 
 
 
-img {
-  height: auto;
-  max-width: 100%;
-  vertical-align: top;
-}
+// img {
+//   height: auto;
+//   max-width: 100%;
+//   vertical-align: top;
+// }
 
 
 
@@ -705,13 +659,9 @@ img {
   }
 }
 
-
-.deal_vehicles {
-  max-width: 1140px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+.vehicles{
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
   background: url($bg-url) repeat 0 0;
   /* Main styles */
   color: #999;
@@ -728,57 +678,68 @@ img {
   -o-animation-timing-function: linear;
   animation-timing-function: linear;
 
-
-
   /* Animations */
+
   @-webkit-keyframes bg-scrolling-reverse {
-      100% {
-          background-position: $bg-width $bg-height;
-      }
-  }
+    100% {
+        background-position: $bg-width $bg-height;
+    }
+}
 
-  @-moz-keyframes bg-scrolling-reverse {
-      100% {
-          background-position: $bg-width $bg-height;
-      }
-  }
+@-moz-keyframes bg-scrolling-reverse {
+    100% {
+        background-position: $bg-width $bg-height;
+    }
+}
 
-  @-o-keyframes bg-scrolling-reverse {
-      100% {
-          background-position: $bg-width $bg-height;
-      }
-  }
+@-o-keyframes bg-scrolling-reverse {
+    100% {
+        background-position: $bg-width $bg-height;
+    }
+}
 
-  @keyframes bg-scrolling-reverse {
-      100% {
-          background-position: $bg-width $bg-height;
-      }
-  }
+@keyframes bg-scrolling-reverse {
+    100% {
+        background-position: $bg-width $bg-height;
+    }
+}
 
-  @-webkit-keyframes bg-scrolling {
-      0% {
-          background-position: $bg-width $bg-height;
-      }
-  }
+@-webkit-keyframes bg-scrolling {
+    0% {
+        background-position: $bg-width $bg-height;
+    }
+}
 
-  @-moz-keyframes bg-scrolling {
-      0% {
-          background-position: $bg-width $bg-height;
-      }
-  }
+@-moz-keyframes bg-scrolling {
+    0% {
+        background-position: $bg-width $bg-height;
+    }
+}
 
-  @-o-keyframes bg-scrolling {
-      0% {
-          background-position: $bg-width $bg-height;
-      }
-  }
+@-o-keyframes bg-scrolling {
+    0% {
+        background-position: $bg-width $bg-height;
+    }
+}
 
-  @keyframes bg-scrolling {
-      0% {
-          background-position: $bg-width $bg-height;
-      }
-  }
+@keyframes bg-scrolling {
+    0% {
+        background-position: $bg-width $bg-height;
+    }
+}
 
+
+.deal_vehicles {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+
+
+  
 
 
 
@@ -793,6 +754,7 @@ img {
       // border: 2px solid black;
       box-shadow: 0px 0px 4px #888888;
       border-radius: $border-radius;
+      background-color: $white;
 
       &:hover {
           transform: scale(1.1);
@@ -816,13 +778,11 @@ img {
   }
 }
 
-
-
-
-
+}
 
 footer {
   width: 100%;
+  margin-top: 1rem;
 
   .contact_address_2 {
       display: none;
@@ -868,7 +828,7 @@ footer {
   .cprofile_sec {
       width: 100%;
       display: flex;
-      margin-bottom: 3rem;
+      margin-bottom: 1rem;
 
       .copy_right,
       .designed_by,
@@ -928,6 +888,4 @@ footer {
 }
 
 @import "main";
-
-
 @import "media";

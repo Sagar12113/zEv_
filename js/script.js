@@ -16,19 +16,6 @@ $('.count_1, .count_2, .count_3 ').each(function () {
   
 	
 
-  
-  
-  
-  
-	
-	
-  
-  
-  
-   
-
-
-
 const sliderElm = document.querySelector('.splide');
 const SLIDE_SPEED = 400;
 const slider = new Splide(sliderElm, {
@@ -122,9 +109,9 @@ var TxtRotate = function(el, toRotate, period) {
 
 
   //   video autoplay
-	var video = document.querySelector('video');
-	video.muted = true;
-	video.play()
+	// var video = document.querySelector('video');
+	// video.muted = true;
+	// video.play()
   
 
   
